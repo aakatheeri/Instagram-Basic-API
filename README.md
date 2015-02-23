@@ -35,8 +35,8 @@ $instagram = new Instagram('Your Client ID');
 $first_post = $instagram->get_popular_posts()[0];
 
 // output link, username, and thumbnail image of first post
-echo 'Link => ' . $first_post->link . '<br>;
-echo 'From => @ ' . $first_post->user->username . '<br>;
+echo 'Link => ' . $first_post->link . '<br>';
+echo 'From => @ ' . $first_post->user->username . '<br>';
 echo 'Thumbnail: <br>';
 echo '<img src="' . $first_post->images->thumbnail->url ." width="' . $first_post->images->thumbnail->width . '" height="' . $first_post->images->thumbnail->height . '" alt="" />';
 
